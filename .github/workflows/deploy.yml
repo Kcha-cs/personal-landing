@@ -1,10 +1,10 @@
 # Nombre del workflow
 name: Deploy VexiKore Landing to GitHub Pages
 
-# Se ejecuta cada vez que haces un 'push' a la rama 'main'
+# Se ejecuta cada vez que haces un 'push' a la rama 'master'
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ] # <-- ¡CORREGIDO!
 
 # Permisos necesarios para que el workflow pueda desplegar en tu nombre
 permissions:
@@ -28,14 +28,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Puedes usar 18 o 20
+          node-version: 20
 
       # 3. Instala todas las dependencias de tu proyecto
       - name: Install dependencies
         run: npm install
 
       # 4. Construye el proyecto (convierte TSX a HTML/CSS/JS)
-      # Este comando crea la carpeta 'dist' con los archivos finales
       - name: Build
         run: npm run build
 
@@ -47,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Asegúrate que la carpeta de build se llame 'dist'
+          path: './dist'
 
       # 7. Despliega los archivos en GitHub Pages
       - name: Deploy to GitHub Pages
