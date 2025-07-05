@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import isotipoImg from '../assets/isotype.png';
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               incluso si le das un tamaño muy grande. Se detendrá en el borde.
           */}
           <img 
-            src="/assets/isotype.png" 
+            src={isotipoImg} 
             alt="Isotipo de VexiKore AI" 
             className="w-auto max-h-full" // Barrera de seguridad para contención
             style={{ height: '30px' }}   // <-- ¡Controla el tamaño aquí! (ej: 4rem es 64px)
