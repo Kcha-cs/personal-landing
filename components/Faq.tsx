@@ -45,7 +45,7 @@ const Faq: React.FC = () => {
     },
     {
       q: '¿Cómo garantizan la seguridad de mis datos?',
-      a: 'La seguridad es nuestro pilar fundamental. Utilizamos encriptación de nivel militar, infraestructura segura en la nube y seguimos las mejores prácticas de ciberseguridad para garantizar que tus datos y los de tus clientes estén siempre protegidos.',
+      a: 'La seguridad es nuestro pilar fundamental. Utilizamos una infraestructura segura en la nube y seguimos las mejores prácticas de ciberseguridad para garantizar que tus datos y los de tus clientes estén siempre protegidos.',
     },
     {
       q: '¿Qué pasa si mi empresa crece y mis necesidades cambian?',
@@ -57,7 +57,7 @@ const Faq: React.FC = () => {
     },
     {
       q: '¿Cuánto tiempo se tarda en implementar un agente de IA?',
-      a: 'El tiempo varía según la complejidad, pero nuestro proceso es ágil. Tras un análisis inicial, podemos tener un agente básico operativo en cuestión de semanas. Nos enfocamos en entregar valor de forma rápida y incremental.',
+      a: 'El tiempo varía según la complejidad, pero nuestro proceso es ágil. Tras un análisis inicial, podemos tener un agente básico operativo en cuestión de semanas. Nos enfocamos en entregar valor de forma rápida e incremental.',
     },
   ];
 
